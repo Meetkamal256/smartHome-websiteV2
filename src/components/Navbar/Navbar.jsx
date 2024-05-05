@@ -1,5 +1,7 @@
 import React from "react";
 import "./navbar.css";
+import { MdOutlineMenu } from "react-icons/md";
+import { IoMdClose } from "react-icons/io";
 
 const Navbar = () => {
   return (
@@ -28,10 +30,14 @@ const Navbar = () => {
 
         <div className="nav__signin-signup">
           <a href="#">Login</a>
-          <a href="#">Sighup</a>
+          <a href="#">Signup</a>
         </div>
-        <button className="menu-btn"></button>
-        <button className="close-btn"></button>
+        <button className="menu-btn">
+          <MdOutlineMenu />
+        </button>
+        <button className="close-btn">
+          <IoMdClose />
+        </button>
       </div>
     </nav>
   );
