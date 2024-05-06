@@ -23,27 +23,27 @@ const Clients = () => {
         </div>
         <div>
           <img src={client2} alt="" />
-          <div>
-            <img src={client2} alt="" />
-          </div>
-          <div>
-            <img src={client3} alt="" />
-          </div>
-          <div>
-            <img src={client4} alt="" />
-          </div>
-          <div>
-            <img src={client5} alt="" />
-          </div>
-          <div>
-            <img src={client6} alt="" />
-          </div>
-          <div>
-            <img src={client7} alt="" />
-          </div>
-          <div>
-            <img src={client8} alt="" />
-          </div>
+        </div>
+        <div>
+          <img src={client2} alt="" />
+        </div>
+        <div>
+          <img src={client3} alt="" />
+        </div>
+        <div>
+          <img src={client4} alt="" />
+        </div>
+        <div>
+          <img src={client5} alt="" />
+        </div>
+        <div>
+          <img src={client6} alt="" />
+        </div>
+        <div>
+          <img src={client7} alt="" />
+        </div>
+        <div>
+          <img src={client8} alt="" />
         </div>
       </div>
     </section>
