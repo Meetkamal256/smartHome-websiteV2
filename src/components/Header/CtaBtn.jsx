@@ -2,14 +2,13 @@ import React from "react";
 import appleLogo from "../../assets/Apple-logo.png";
 import androidLogo from "../../assets/google playstore.png";
 
-const CtaBtn = () => {
+const CtaBtn = ({ style }) => {
   return (
-    <div className="cta">
+    <div className="cta" style={style}>
       <a
         href="https://www.apple.com/app-store/"
-        class="btn btn-primary"
-        target="__blank"
         className="btn btn-primary"
+        target="__blank"
       >
         <div className="logo">
           <img src={appleLogo} alt="apple logo" />
@@ -19,7 +18,7 @@ const CtaBtn = () => {
           <h4>App Store</h4>
         </span>
       </a>
-      <a href="#" class="btn btn-primary" target="__blank">
+      <a href="#" className="btn btn-primary" target="__blank">
         <div className="logo">
           <img src={androidLogo} alt="apple logo" />
         </div>
