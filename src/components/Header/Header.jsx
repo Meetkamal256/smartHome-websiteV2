@@ -2,7 +2,7 @@ import React from "react";
 import "./header.css";
 import heroImg from "../../assets/hero.png";
 import appleLogo from "../../assets/Apple-logo.png";
-import androidLogo from "../../assets/android.png";
+import androidLogo from "../../assets/google playstore.png";
 import decorator1 from "../../assets/header-decorator1.png";
 import decorator2 from "../../assets/header-decorator-2.png";
 import { FaFacebook, FaInstagram, FaTwitter, FaLinkedin } from "react-icons/fa";
@@ -49,7 +49,7 @@ const Header = () => {
             </span>
           </a>
         </div>
-
+        
         <div className="header__socials">
           <a href="https://www.facebook.com">
             <FaFacebook />
@@ -65,7 +65,7 @@ const Header = () => {
           </a>
         </div>
       </div>
-
+      
       <div className="header__decorator-1">
         <img src={decorator1} alt="" />
       </div>
