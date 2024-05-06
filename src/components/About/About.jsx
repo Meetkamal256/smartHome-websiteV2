@@ -23,6 +23,9 @@ const About = () => {
               energy usage and save money while reducing your environmental
               footprint.
             </p>
+            <a href="#" className="btn btn-primary">
+              Learn more
+            </a>
           </div>
         </article>
         <article className="about__article">
@@ -34,6 +37,9 @@ const About = () => {
               effortlessly, ensuring a cozy environment year-round while
               maximizing energy efficiency.
             </p>
+            <a href="#" className="btn btn-primary">
+              Learn more
+            </a>
           </div>
           <div className="about__image">
             <img src={about2} alt="Mobile phone showing temperature control" />
@@ -51,6 +57,9 @@ const About = () => {
               effortlessly control every aspect of your home environment for
               ultimate comfort and convenience.
             </p>
+            <a href="#" className="btn btn-primary">
+              Learn more
+            </a>
           </div>
         </article>
       </div>
