@@ -90,7 +90,7 @@ img {
 
 .btn-primary {
   background: var(--color-black);
-  background: var(--color-white);
+  color: var(--color-white);
   transition: var(--transition);
 }
 

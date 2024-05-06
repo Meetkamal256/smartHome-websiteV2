@@ -30,7 +30,7 @@ const Navbar = () => {
 
         <div className="nav__signin-signup">
           <a href="#">Login</a>
-          <a href="#">Signup</a>
+          <a href="#" className="btn">Signup</a>
         </div>
         <button className="menu-btn">
           <MdOutlineMenu />
