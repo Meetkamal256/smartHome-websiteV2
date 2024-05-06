@@ -7,7 +7,7 @@ const Faqs = () => {
     <section id="faqs">
       <h1>FAQS</h1>
       <div className="container faqs__container">
-        <article className="faq">
+        <article className="faq ">
           <span className="faq__icon">
             <FaPlus />
           </span>
