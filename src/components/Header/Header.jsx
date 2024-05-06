@@ -11,7 +11,7 @@ const Header = () => {
   return (
     <header>
       <div className="container header__container">
-        <h1>
+        <h1 className="header__title">
           Smart Home <br />
           Application
         </h1>
