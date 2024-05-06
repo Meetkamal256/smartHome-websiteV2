@@ -1,5 +1,7 @@
 import React from "react";
 import "./downloadApp.css";
+import CtaBtn from "../Header/CtaBtn";
+import downloadAppImg from "../../assets/app.png";
 
 const DownloadApp = () => {
   return (
@@ -14,7 +16,10 @@ const DownloadApp = () => {
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi,
             placeat?
           </p>
-          
+          <CtaBtn />
+        </div>
+        <div className="downloadApp__image">
+          <img src={downloadAppImg} />
         </div>
       </div>
     </section>

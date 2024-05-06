@@ -40,7 +40,7 @@ const Header = () => {
           </a>
         </div>
       </div>
-      
+
       <div className="header__decorator-1">
         <img src={decorator1} alt="" />
       </div>
