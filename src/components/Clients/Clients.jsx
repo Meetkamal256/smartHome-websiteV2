@@ -14,8 +14,10 @@ const Clients = () => {
     <section id="clients">
       <h1>Our Clients</h1>
       <p className="lead">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum veniam
-        eligendi cupiditate!
+        Trusted by leading companies worldwide, our Smart Home Application has
+        revolutionized the way businesses and individuals manage their homes.
+        Join our growing community and experience the power of smart living
+        today.
       </p>
       <div className="container clients__container">
         <div>
