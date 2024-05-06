@@ -1,0 +1,32 @@
+#testimonials h1 {
+  text-align: center;
+}
+
+.testimonials__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.2rem;
+}
+
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+  background: var(--color-light);
+  padding: 3rem;
+  border: 1px solid transparent;
+  transition: var(--transition);
+}
+
+.testimonial:hover {
+  border-color: var(--color-primary);
+  background: var(--color-white);
+  color: var(--color-primary);
+  box-shadow: 0 2rem 2rem var(--color-primary-variant);
+  z-index: 1;
+}
+
+.testimonial__client {
+  display: flex;
+  gap: 1rem;
+}
