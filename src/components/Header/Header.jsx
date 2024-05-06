@@ -16,11 +16,10 @@ const Header = () => {
           Application
         </h1>
         <p className="lead">
-          Welcome to our Smart Home Application! Explore a world of convenience
-          and innovation where your home becomes smarter, safer, and more
-          efficient. Discover how our cutting-edge technology seamlessly
-          integrates into your lifestyle, offering you control and peace of mind
-          like never before.
+          Dive into the future of home automation with our innovative Smart Home
+          Application. Unlock unparalleled convenience, safety, and efficiency
+          as our cutting-edge technology seamlessly integrates into your daily
+          life, revolutionizing the way you interact with your home.
         </p>
         <div className="header__image">
           <img src={heroImg} alt="heroImg" />
@@ -30,6 +29,7 @@ const Header = () => {
             href="https://www.apple.com/app-store/"
             class="btn btn-primary"
             target="__blank"
+            className="btn btn-primary"
           >
             <div className="logo">
               <img src={appleLogo} alt="apple logo" />
@@ -69,7 +69,7 @@ const Header = () => {
       <div className="header__decorator-1">
         <img src={decorator1} alt="" />
       </div>
-      <div className="header__decorator-1">
+      <div className="header__decorator-2">
         <img src={decorator2} alt="" />
       </div>
     </header>
