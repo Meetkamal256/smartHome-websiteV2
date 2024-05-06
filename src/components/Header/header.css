@@ -62,11 +62,11 @@ header p {
 }
 
 .header__decorator-1 {
-    position: absolute;
+  position: absolute;
 }
 
 .header__decorator-2 {
-    position: absolute;
-    right: 0;
-    margin-top: -24rem;
+  position: absolute;
+  right: 0;
+  margin-top: -24rem;
 }
