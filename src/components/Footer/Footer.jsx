@@ -8,17 +8,15 @@ const Footer = () => {
     <footer>
       <div className="container footer__container">
         <div className="footer__1">
-          <div className="logo">
-            <a href="index.html">
-              <h3>SmartHome</h3>
-            </a>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <div className="footer__subscribe">
-              <input type="email" placeholder="Enter Email" required />
-              <button type="submit">
-                <FaArrowRight />
-              </button>
-            </div>
+          <a href="index.html" className="footer__logo">
+            <h3>SmartHome</h3>
+          </a>
+          <p> Revolutionize your living experience with SmartHome.</p>
+          <div className="footer__subscribe">
+            <input type="email" placeholder="Enter Email" required />
+            <button type="submit">
+              <FaArrowRight />
+            </button>
           </div>
         </div>
         <div className="footer__2">
@@ -85,7 +83,7 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-      <div className="copyright">Copyright &copy;</div>
+      <div className="copyright">Copyright &copy; 2024</div>
     </footer>
   );
 };
