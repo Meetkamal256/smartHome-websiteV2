@@ -15,7 +15,16 @@ const DownloadApp = () => {
           Get the ultimate smart home experience by downloading our app today!
           Take control of your home from anywhere, at any time.
         </p>
-        <CtaBtn style={{ justifyContent: "start", marginTop: "2rem" }} />
+        <CtaBtn
+          style={{
+            justifyContent: "start",
+            marginTop: "2rem",
+            maxWidth: "1024px",
+            flexDirection: "column",
+            gap: "1rem",
+            margin: "0 auto",
+          }}
+        />
       </div>
       <div className="downloadApp__image">
         <img src={downloadAppImg} alt="Download App" />

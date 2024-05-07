@@ -27,15 +27,15 @@ const Navbar = () => {
         <a href="index.html" className="nav__logo">
           <h3>SmartHome</h3>
         </a>
-
+        
         <div className="nav__signin-signup">
           <a href="#">Login</a>
           <a href="#" className="btn">Signup</a>
         </div>
-        <button className="menu-btn">
+        <button id="menu-btn">
           <MdOutlineMenu />
         </button>
-        <button className="close-btn">
+        <button id="close-btn">
           <IoMdClose />
         </button>
       </div>
