@@ -2,6 +2,7 @@ import React from "react";
 import "./footer.css";
 import { FaArrowRight } from "react-icons/fa";
 import { FaFacebook, FaInstagram, FaTwitter, FaLinkedin } from "react-icons/fa";
+import { pageLinks } from "../../data";
 
 const Footer = () => {
   return (
@@ -22,21 +23,14 @@ const Footer = () => {
         <div className="footer__2">
           <h4>Permalinks</h4>
           <ul className="permalinks">
-            <li>
-              <a href="index.html">Home</a>
-            </li>
-            <li>
-              <a href="index.html#about">About</a>
-            </li>
-            <li>
-              <a href="index.html#testimonials">Testimonials</a>
-            </li>
-            <li>
-              <a href="index.html#faqs">Faqs</a>
-            </li>
-            <li>
-              <a href="contact.html">Contact</a>
-            </li>
+            {pageLinks.map((link) => {
+              const { id, href, text } = link;
+              return (
+                <li key={id}>
+                  <a href={href}>{text}</a>
+                </li>
+              );
+            })}
           </ul>
         </div>
         <div className="footer__3">
