@@ -1,10 +1,11 @@
 import React from "react";
 import appleLogo from "../../assets/Apple-logo.png";
 import androidLogo from "../../assets/google playstore.png";
+import "./ctaBtn.css";
 
-const CtaBtn = ({ style }) => {
+const CtaBtn = () => {
   return (
-    <div className="cta" style={style}>
+    <div className="cta">
       <a
         href="https://www.apple.com/app-store/"
         className="btn btn-primary"

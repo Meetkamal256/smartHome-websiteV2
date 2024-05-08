@@ -23,14 +23,7 @@ const Header = () => {
         <div className="header__image">
           <img src={heroImg} alt="heroImg" />
         </div>
-        <CtaBtn
-          style={{
-            maxWidth: "600px",
-            flexDirection: "column",
-            alignItems: "center",
-            gap: "1rem",
-          }}
-        />
+        <CtaBtn />
 
         <div className="header__socials">
           <a href="https://www.facebook.com">

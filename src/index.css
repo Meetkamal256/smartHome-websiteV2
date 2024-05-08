@@ -120,39 +120,39 @@ section {
   .container {
     width: var(--container-width-tablet);
   }
-
+  
   h1 {
     font-size: 4.2rem;
   }
-
+  
   h2 {
     font-size: 2rem;
   }
-
+  
   h3 {
     font-size: 1.9rem;
   }
-
+  
   .lead {
     width: 72%;
     margin-bottom: 3rem;
   }
-
+  
   section {
     padding-bottom: var(--bottom-section-padding);
   }
-
+  
   /* ========================= NAVBAR ==========================*/
-
+  
   nav {
     background: var(--color-primary);
   }
-
+  
   .nav__container {
     position: relative;
     width: 100vw;
   }
-
+  
   .nav__items {
     position: fixed;
     top: 6rem;
@@ -164,13 +164,18 @@ section {
     flex-direction: column;
     gap: 0;
     display: none;
+    transiition: var(--transiition);
   }
-
+  
+  .nav__items.open {
+    display: block;
+  }
+  
   .nav__items li {
     width: 100%;
     height: 6rem;
   }
-
+  
   .nav__items li a {
     color: var(--color-black);
     height: 100%;
@@ -185,18 +190,18 @@ section {
     background: var(--color-primary);
     color: #fff;
   }
-
+  
   .nav__signin-signup {
     display: none;
   }
-
+  
   .nav__logo {
     position: relative;
     left: 0;
     transform: translate(0);
     margin-left: 1.5rem;
   }
-
+  
   nav button {
     display: inline-block;
     margin-right: 1.4rem;
@@ -204,26 +209,26 @@ section {
     color: #ffff;
     cursor: pointer;
   }
-
+  
   #close-btn {
     display: none;
   }
-
+  
   #menu-btn,
   #close-btn {
     font-size: 2.4rem;
   }
-
+  
   /* ========================= HEADER ==========================*/
   header {
     padding-bottom: var(--bottom-section-padding);
     background: var(--color-primary);
   }
-
+  
   .header__title {
     margin-bottom: 1.5rem;
   }
-
+  
   .header__image {
     display: none;
   }
@@ -306,7 +311,7 @@ section {
   html {
     font-size: 14px;
   }
-
+  
   .container {
     width: var(--container-width-phone);
   }
@@ -340,17 +345,17 @@ section {
   nav button {
     margin-right: 0.7rem;
   }
-
+  
   /* ========================= HEADER========================== */
-
+  
   .header__title {
     padding-top: 11rem;
   }
-
+  
   .header__socials {
     display: none;
   }
-
+  
   /* ========================= About ========================== */
   .about__article {
     grid-template-columns: 1fr;
@@ -358,48 +363,48 @@ section {
     text-align: center;
     gap: 0;
   }
-
+  
   .about__article:nth-child(2) .about__image {
     grid-row: 1;
   }
-
+  
   /* ========================= CLIENTS ========================== */
   .clients__container {
     grid-template-columns: 1fr 1fr;
     gap: 0.5rem;
   }
-
+  
   /* ========================= TESTIMONIALS ========================== */
-
+  
   .testimonial {
     padding: 1.4rem;
   }
-
+  
   /* ========================= FAQS ==========================*/
-
+  
   .faqs__container {
     max-width: 100%;
   }
-
+  
   /* ========================= FOOTER ========================== */
   .footer__container {
     grid-template-columns: 1fr;
     text-align: center;
   }
-
+  
   .footer__1 {
     width: var(--container-width-phone);
   }
-
+  
   .footer__1 p {
     width: 94%;
     margin: 0 auto 3rem;
   }
-
+  
   .footer__subscribe {
     margin: 0 auto;
   }
-
+  
   .footer__socials {
     justify-content: center;
   }
