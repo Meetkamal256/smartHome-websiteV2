@@ -3,6 +3,34 @@ import avatar2 from "./assets/avatar2.jpg";
 import avatar3 from "./assets/avatar3.jpg";
 import avatar4 from "./assets/avatar4.jpg";
 
+export const pageLinks = [
+  {
+    id: 1,
+    href: "index.html",
+    text: "Home",
+  },
+  {
+    id: 2,
+    href: "index.html#about",
+    text: "About",
+  },
+  {
+    id: 3,
+    href: "index.html#testimonials",
+    text: "Testimonials",
+  },
+  {
+    id: 4,
+    href: "index.html#faqs",
+    text: "FAQS",
+  },
+  {
+    id: 5,
+    href: "contact.html",
+    text: "Contact",
+  },
+];
+
 export const testimonials = [
   {
     id: 1,
@@ -44,7 +72,7 @@ export const questions = [
     title: "How do I get Started",
     info: "Getting started with our Smart Home Application is easy! Simply download the app from the App Store or Google Play, sign up for an account, and follow the on-screen instructions to set up your smart devices.",
   },
-  
+
   {
     id: 2,
     title: "Is my Data Secure",

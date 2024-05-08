@@ -14,7 +14,7 @@ const Testimonials = () => {
         {testimonials.map((testimonial) => {
           const { id, review, photo, name, profession } = testimonial;
           return (
-            <article className="testimonial">
+            <article className="testimonial" key={id}>
               <p>{review}</p>
               <div className="testimonial__client">
                 <div className="avatar">
