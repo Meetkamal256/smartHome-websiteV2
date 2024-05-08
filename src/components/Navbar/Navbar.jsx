@@ -9,11 +9,11 @@ const Navbar = () => {
   const toggleNavbar = () => {
     setIsOpen(!isOpen);
   };
-
+  
   const closeNavbar = () => {
     setIsOpen(false);
   };
-
+  
   return (
     <nav>
       <div className="container nav__container">
@@ -47,7 +47,7 @@ const Navbar = () => {
         <a href="index.html" className="nav__logo">
           <h3>SmartHome</h3>
         </a>
-
+        
         <div className="nav__signin-signup">
           <a href="#">Login</a>
           <a href="#" className="btn">
