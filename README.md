@@ -1,1 +1,1 @@
-![smarthome-website](https://github.com/Meetkamal256/smartHome-websiteV2/assets/104779844/8d948fdd-7ca7-43fa-8cd8-26d674059e23)
+![smartHomeV2](https://github.com/Meetkamal256/smartHome-websiteV2/assets/104779844/1a2cd56b-ff20-498d-9b2d-da829e8c86c2)
