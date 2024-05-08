@@ -24,11 +24,11 @@ export const pageLinks = [
     href: "index.html#faqs",
     text: "FAQS",
   },
-  {
-    id: 5,
-    href: "contact.html",
-    text: "Contact",
-  },
+  // {
+  //   id: 5,
+  //   href: "contact.html",
+  //   text: "Contact",
+  // },
 ];
 
 export const testimonials = [
