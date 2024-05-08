@@ -1,10 +1,50 @@
-const questions = [
+import avatar1 from "./assets/avatar1.jpg";
+import avatar2 from "./assets/avatar2.jpg";
+import avatar3 from "./assets/avatar3.jpg";
+import avatar4 from "./assets/avatar4.jpg";
+
+export const testimonials = [
+  {
+    id: 1,
+    review:
+      "I've been using the Smart Home Application for a while now, and it's completely transformed how I interact with my home. Highly recommended!",
+    photo: avatar1,
+    name: "Diana Ayi",
+    profession: "Musician",
+  },
+  {
+    id: 2,
+    review:
+      "The Smart Home Application has made managing my home a breeze. It's intuitive, efficient, and has truly simplified my life.",
+    photo: avatar2,
+    name: "Ernest Achiever",
+    profession: "Web Developer",
+  },
+  {
+    id: 3,
+    review:
+      "As a professional athlete, I need my home to be both comfortable and secure. The Smart Home Application delivers on both fronts, allowing me to focus on my game with peace of mind.",
+    name: "Tommy Shelby",
+    photo: avatar3,
+    profession: "Footballer",
+  },
+  {
+    id: 4,
+    review:
+      "I'm impressed by the level of customization and control offered by the Smart Home Application. It's tailored to my needs and has exceeded my expectations.",
+    photo: avatar4,
+    name: "Beatrice Aku",
+    profession: "Politician",
+  },
+];
+
+export const questions = [
   {
     id: 1,
     title: "How do I get Started",
     info: "Getting started with our Smart Home Application is easy! Simply download the app from the App Store or Google Play, sign up for an account, and follow the on-screen instructions to set up your smart devices.",
   },
-
+  
   {
     id: 2,
     title: "Is my Data Secure",
@@ -31,5 +71,3 @@ const questions = [
     info: "   Yes, we offer a mobile app for both iOS and Android devices. You can download the app for free from the App Store or Google Play and access all the features of our Smart Home Application on the",
   },
 ];
-
-export default questions;
