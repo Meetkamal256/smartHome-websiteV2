@@ -12,3 +12,26 @@
   margin-top: 1.4rem;
   width: 80%;
 }
+
+/* ================ MEDIA QUERIES
+(TABLETS) ===================== */
+@media screen and (max-width: 1024px) {
+  .subscribe__container {
+    flex-direction: column;
+    gap: 4rem;
+    padding: 3rem;
+    font-sizre: 1.2rem;
+    height: auto;
+  }
+
+  .subscribe__container p {
+    width: 94%;
+  }
+}
+
+
+/* ================ MEDIA QUERIES
+(TABLETS) ===================== */
+@media screen and (max-width: 600px) {
+
+}

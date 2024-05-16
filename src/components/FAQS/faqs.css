@@ -49,3 +49,21 @@
 .faq.open .faq__answer {
   display: block;
 }
+
+/* ============================= MEDIA QUERIES(TABLETS) 
+============================== */
+
+@media screen and (max-width: 1024px) {
+  .faqs__container {
+    max-width: 80%;
+  }
+}
+
+/* ============================= MEDIA QUERIES(PHONES) 
+============================== */
+
+@media screen and (max-width: 600px) {
+  .faqs__container {
+    max-width: 100%;
+  }
+}

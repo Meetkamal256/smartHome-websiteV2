@@ -18,3 +18,32 @@
 .about__article .btn {
   margin-top: 2.4rem;
 }
+
+/* ============================= MEDIA QUERIES(TABLETS) 
+============================== */
+
+@media screen and (max-width: 1024px) {
+  #about {
+    margin-top: 7rem;
+  }
+
+  .about__article {
+    margin: 0 auto;
+  }
+}
+
+/* ============================= MEDIA QUERIES(PHONES) 
+============================== */
+
+@media screen and (max-width: 600px) {
+  .about__article {
+    grid-template-columns: 1fr;
+    margin-top: 5rem;
+    text-align: center;
+    gap: 0;
+  }
+
+  .about__article:nth-child(2) .about__image {
+    grid-row: 1;
+  }
+}

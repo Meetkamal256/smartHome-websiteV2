@@ -30,3 +30,22 @@
   display: flex;
   gap: 1rem;
 }
+
+/* ============================= MEDIA QUERIES(TABLETS) 
+============================== */
+
+@media screen and (max-width: 1024px) {
+  .testimonials__container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+
+/* ============================= MEDIA QUERIES(PHONES) 
+============================== */
+
+@media screen and (max-width: 600px) {
+}
+.testimonial {
+  padding: 1.4rem;
+}

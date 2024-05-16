@@ -19,3 +19,22 @@
 .clients__container div:hover {
   background: var(--color-white);
 }
+
+/* ============================= MEDIA QUERIES(TABLETS) 
+============================== */
+
+@media screen and (max-width: 1024px) {
+  .clients__container {
+    gap: 1rem;
+  }
+}
+
+/* ============================= MEDIA QUERIES(PHONES) 
+============================== */
+
+@media screen and (max-width: 600px) {
+  .clients__container {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+  }
+}
