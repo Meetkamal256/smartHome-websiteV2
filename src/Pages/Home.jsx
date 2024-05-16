@@ -12,13 +12,27 @@ const Home = () => {
   return (
     <>
       <Navbar />
-      <Header />
-      <About />
-      <Clients />
-      <Testimonials />
-      <Faqs />
-      <DownloadApp />
-      <Subscribe />
+      <section id="header">
+        <Header />
+      </section>
+      <section id="about">
+        <About />
+      </section>
+      <section id="clients">
+        <Clients />
+      </section>
+      <section id="testimonials">
+        <Testimonials />
+      </section>
+      <section id="faqs">
+        <Faqs />
+      </section>
+      <section id="downloadapp">
+        <DownloadApp />
+      </section>
+      <section id="subscribe">
+        <Subscribe />
+      </section>
     </>
   );
 };

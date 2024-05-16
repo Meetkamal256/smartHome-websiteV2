@@ -6,28 +6,33 @@ import avatar4 from "./assets/avatar4.jpg";
 export const pageLinks = [
   {
     id: 1,
-    href: "index.html",
+    path: "header",
     text: "Home",
+    isExternal: false,
   },
   {
     id: 2,
-    href: "index.html#about",
+    path: "about",
     text: "About",
+    isExternal: false,
   },
   {
     id: 3,
-    href: "index.html#testimonials",
+    path: "testimonials",
     text: "Testimonials",
+    isExternal: false,
   },
   {
     id: 4,
-    href: "index.html#faqs",
+    path: "faqs",
     text: "FAQS",
+    isExternal: false,
   },
   {
     id: 5,
-    href: "contact.html",
+    path: "/contact",
     text: "Contact",
+    isExternal: true,
   },
 ];
 

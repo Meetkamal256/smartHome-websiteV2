@@ -1,6 +1,8 @@
 import React, { useState } from "react";
+import { Link, NavLink } from "react-router-dom";
 import { MdOutlineMenu } from "react-icons/md";
 import { IoMdClose } from "react-icons/io";
+import { Link as ScrollLink } from "react-scroll";
 import "./navbar.css";
 import { pageLinks } from "../../data";
 
@@ -18,21 +20,34 @@ const Navbar = () => {
   return (
     <nav>
       <div className="container nav__container">
+        <Link to="/" className="nav__logo">
+          <h3>SmartHome</h3>
+        </Link>
+
         <ul className={`nav__items ${isOpen ? "open" : ""}`}>
           {pageLinks.map((link) => {
-            const { id, href, text } = link;
+            const { id, path, text, isExternal } = link;
             return (
               <li key={id}>
-                <a href={href} onClick={closeNavbar}>
-                  {text}
-                </a>
+                {isExternal ? (
+                  <NavLink to={path} onClick={closeNavbar}>
+                    {text}
+                  </NavLink>
+                ) : (
+                  <ScrollLink
+                    to={path}
+                    smooth={true}
+                    duration={500}
+                    offset={-150} // Adjust this offset to account for the height of your fixed navbar
+                    onClick={closeNavbar}
+                  >
+                    {text}
+                  </ScrollLink>
+                )}
               </li>
             );
           })}
         </ul>
-        <a href="index.html" className="nav__logo">
-          <h3>SmartHome</h3>
-        </a>
         
         <div className="nav__signin-signup">
           <a href="#">Login</a>
@@ -40,11 +55,9 @@ const Navbar = () => {
             Signup
           </a>
         </div>
+        
         <button id="menu-btn" onClick={toggleNavbar}>
           {isOpen ? <IoMdClose /> : <MdOutlineMenu />}
-        </button>
-        <button id="close-btn" onClick={toggleNavbar}>
-          <IoMdClose />
         </button>
       </div>
     </nav>
