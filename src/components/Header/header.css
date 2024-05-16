@@ -70,3 +70,47 @@ header p {
   right: 0;
   margin-top: -24rem;
 }
+
+/* ======================================= MEDIA QUERIES (medium devices) ======================================== */
+
+@media screen and (max-width: 1024px) {
+  /* ========================= HEADER ==========================*/
+  header {
+    padding-bottom: var(--bottom-section-padding);
+    background: var(--color-primary);
+  }
+
+  .header__title {
+    margin-bottom: 1.5rem;
+  }
+
+  .header__image {
+    display: none;
+  }
+
+  .cta {
+    margin-top: 3rem;
+  }
+
+  .header__socials {
+    top: 24%;
+    gap: 1rem;
+    font-size: 1rem;
+  }
+
+  .header__decorator-2 {
+    display: none;
+  }
+}
+
+/* ======================================= MEDIA QUERIES (small devices) ======================================== */
+
+@media screen and (max-width: 600px) {
+  .header__title {
+    padding-top: 11rem;
+  }
+
+  .header__socials {
+    display: none;
+  }
+}

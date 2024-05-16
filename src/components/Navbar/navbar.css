@@ -42,5 +42,98 @@ nav button {
   font-size: 1.7rem;
 }
 
+/* =================================================== MEDIA QUERIES (medium device) ============================================== */
+@media screen and (max-width: 1024px) {
+  nav {
+    background: var(--color-primary);
+  }
 
+  .nav__container {
+    position: relative;
+    width: 100vw;
+  }
 
+  .nav__items {
+    position: fixed;
+    top: 6rem;
+    right: 0;
+    background: var(--color-white);
+    height: max-content;
+    width: 18rem;
+    box-shadow: -2rem 2rem 3rem rgba(0, 0, 0, 0.2);
+    flex-direction: column;
+    gap: 0;
+    display: none;
+    transiition: var(--transiition);
+  }
+
+  .nav__items.open {
+    display: block;
+  }
+
+  .nav__items li {
+    width: 100%;
+    height: 6rem;
+  }
+
+  .nav__items li a {
+    color: var(--color-black);
+    height: 100%;
+    width: 100%;
+    display: block;
+    padding-left: 2rem;
+    display: flex;
+    align-items: center;
+    transition: var(--transiition);
+  }
+  .nav__items li a:hover {
+    background: var(--color-primary);
+    color: #fff;
+  }
+  
+  .nav__signin-signup {
+    display: none;
+  }
+  
+  .nav__logo {
+    position: relative;
+    left: 0;
+    transform: translate(0);
+    margin-left: 1.5rem;
+  }
+  
+  nav button {
+    display: inline-block;
+    margin-right: 1.4rem;
+    background: transparent;
+    color: #ffff;
+    cursor: pointer;
+  }
+  
+  #close-btn {
+    display: none;
+  }
+  
+  #menu-btn,
+  #close-btn {
+    font-size: 2.4rem;
+  }
+}
+
+/* =================================================== MEDIA QUERIES (small device) ============================================== */
+
+@media screen and (max-width: 600px) {
+  .nav__logo {
+    margin-left: 1rem;
+    
+  }
+  
+  .nav__items li a {
+    justify-content: center;
+    padding: 0;
+  }
+  
+  nav button {
+    margin-right: 0.7rem;
+  }
+}
