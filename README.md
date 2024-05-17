@@ -8,7 +8,7 @@ Responsive smartHome website
 
 ## Live Demo
 
-[]
+[https://smarthome-website-react.vercel.app/]
 
 ## Overview
 
