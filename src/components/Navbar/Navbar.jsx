@@ -9,11 +9,11 @@ import { pageLinks } from "../../data";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const navigate = useNavigate();
-  
+
   const toggleNavbar = () => {
     setIsOpen(!isOpen);
   };
-  
+
   const closeNavbar = () => {
     setIsOpen(false);
   };
@@ -33,7 +33,7 @@ const Navbar = () => {
     }
     closeNavbar();
   };
-
+  
   return (
     <nav>
       <div className="container nav__container">

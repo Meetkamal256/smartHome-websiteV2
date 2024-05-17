@@ -21,9 +21,9 @@
 @media screen and (max-width: 1024px) {
   .downloadApp__container {
     text-align: center;
-    margin-bottom: 8rem;
+    padding-bottom: 8rem;
   }
-
+  
   #downloadApp .cta {
     flex-direction: column;
   }
@@ -33,4 +33,5 @@
 ============================== */
 
 @media screen and (max-width: 600px) {
+
 }

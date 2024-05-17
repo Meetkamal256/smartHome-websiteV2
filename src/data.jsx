@@ -77,7 +77,7 @@ export const questions = [
     title: "How do I get Started",
     info: "Getting started with our Smart Home Application is easy! Simply download the app from the App Store or Google Play, sign up for an account, and follow the on-screen instructions to set up your smart devices.",
   },
-
+  
   {
     id: 2,
     title: "Is my Data Secure",

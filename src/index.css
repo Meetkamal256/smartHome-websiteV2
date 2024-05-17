@@ -7,12 +7,12 @@
   --color-light: #f4f4f4;
   --color-black: #000f37;
   --color-dark: #575757;
-
-  --bottom-section-padding: 6rem;
-  --bottom-section-padding-mobile: 4rem;
-
+  
+  --bottom-section-padding: 12rem;
+  --bottom-section-padding-mobile: 8rem;
+  
   --transition: all 400ms ease;
-
+  
   --container-width: 84%;
   --container-width-tablet: 90%;
   --container-width-phone: 94%;
