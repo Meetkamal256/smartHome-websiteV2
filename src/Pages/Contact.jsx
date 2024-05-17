@@ -1,28 +1,28 @@
-import './contact.css';
+import "./contact.css";
 
 const Contact = () => {
   return (
     <section id="contact">
-      <div class="container">
+      <div className="container">
         <aside>
           <h4>Get in touch</h4>
           <p>
             We'd love to get in touch with you. our friendly team is here to
             chat.
           </p>
-          
-          <div class="info">
+
+          <div className="info">
             <article>
-              <span class="icon"></span>
-              <div class="details">
+              <span className="icon"></span>
+              <div className="details">
                 <h5>Chat with us</h5>
                 <small>Send us an email we'll respond shortly.</small>
                 <p>meetkamal256@gmail.com</p>
               </div>
             </article>
             <article>
-              <span class="icon"></span>
-              <div class="details">
+              <span className="icon"></span>
+              <div className="details">
                 <h5>Office</h5>
                 <small>Come say hello to our office HQ.</small>
                 <p>123 Mills Street</p>
@@ -30,8 +30,8 @@ const Contact = () => {
               </div>
             </article>
             <article>
-              <span class="icon"></span>
-              <div class="details">
+              <span className="icon"></span>
+              <div className="details">
                 <h5>Phone</h5>
                 <small>Mon-Fri 9am - 5pm</small>
                 <p>+123 456 789 10</p>
@@ -40,7 +40,7 @@ const Contact = () => {
             </article>
           </div>
         </aside>
-        
+
         <form action="https://formspree.io/f/xoqgrdpa" method="POST">
           <input type="text" name="name" placeholder="Your name" required />
           <input
@@ -56,7 +56,7 @@ const Contact = () => {
             required
           />
           <textarea name="Message" placeholder="Message" required></textarea>
-          <button type="submit" class="btn">
+          <button type="submit" className="btn">
             Send
           </button>
         </form>

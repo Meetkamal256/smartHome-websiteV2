@@ -51,7 +51,7 @@ const Footer = () => {
           <h4>Contact Us</h4>
           <p>
             +01 234 888 8888 <br />
-            shakir256@gmail.com
+            meetkamal256@gmail.com
           </p>
           <ul className="footer__socials">
             <li>
