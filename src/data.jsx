@@ -6,25 +6,25 @@ import avatar4 from "./assets/avatar4.jpg";
 export const pageLinks = [
   {
     id: 1,
-    path: "header",
+    path: "#header",
     text: "Home",
     isExternal: false,
   },
   {
     id: 2,
-    path: "about",
+    path: "#about",
     text: "About",
     isExternal: false,
   },
   {
     id: 3,
-    path: "testimonials",
+    path: "#testimonials",
     text: "Testimonials",
     isExternal: false,
   },
   {
     id: 4,
-    path: "faqs",
+    path: "#faqs",
     text: "FAQS",
     isExternal: false,
   },

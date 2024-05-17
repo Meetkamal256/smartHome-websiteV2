@@ -11,19 +11,20 @@ import Subscribe from "./components/Subscribe/Subscribe";
 import Footer from "./components/Footer/Footer";
 import Home from "./Pages/Home";
 import Contact from "./Pages/Contact";
+import ScrollToSection from "./components/ScrollToSection";
 
 const App = () => {
   return (
     <React.Fragment>
       <BrowserRouter>
+        <ScrollToSection />
         <Navbar />
         <Routes>
           <Route index element={<Home />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
-
-      <Footer />
     </React.Fragment>
   );
 };

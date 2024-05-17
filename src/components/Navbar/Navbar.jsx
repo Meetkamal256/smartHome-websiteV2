@@ -1,29 +1,50 @@
 import React, { useState } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { MdOutlineMenu } from "react-icons/md";
 import { IoMdClose } from "react-icons/io";
-import { Link as ScrollLink } from "react-scroll";
+import { scroller } from "react-scroll";
 import "./navbar.css";
 import { pageLinks } from "../../data";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-
+  const navigate = useNavigate();
+  
   const toggleNavbar = () => {
     setIsOpen(!isOpen);
   };
-
+  
   const closeNavbar = () => {
     setIsOpen(false);
+  };
+  
+  const handleNavClick = (path, isExternal) => {
+    if (isExternal) {
+      navigate(path);
+    } else {
+      navigate("/");
+      setTimeout(() => {
+        scroller.scrollTo(path.substring(1), {
+          smooth: true,
+          duration: 500,
+          offset: -150,
+        });
+      }, 0);
+    }
+    closeNavbar();
   };
 
   return (
     <nav>
       <div className="container nav__container">
-        <Link to="/" className="nav__logo">
+        <NavLink
+          to="/"
+          className="nav__logo"
+          onClick={() => handleNavClick("#header", false)}
+        >
           <h3>SmartHome</h3>
-        </Link>
-
+        </NavLink>
+        
         <ul className={`nav__items ${isOpen ? "open" : ""}`}>
           {pageLinks.map((link) => {
             const { id, path, text, isExternal } = link;
@@ -34,15 +55,12 @@ const Navbar = () => {
                     {text}
                   </NavLink>
                 ) : (
-                  <ScrollLink
-                    to={path}
-                    smooth={true}
-                    duration={500}
-                    offset={-150} // Adjust this offset to account for the height of your fixed navbar
-                    onClick={closeNavbar}
+                  <a
+                    href={`${path}`}
+                    onClick={() => handleNavClick(path, isExternal)}
                   >
                     {text}
-                  </ScrollLink>
+                  </a>
                 )}
               </li>
             );
